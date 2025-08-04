@@ -56,5 +56,5 @@ def delete_user(user_id):
     return jsonify({"message": "User deleted"})
 
 if __name__ == '__main__':
-    # debug=True 옵션은 개발용, 더 자세한 로그와 에러페이지 제공
+    # debug=True: development
     app.run(port=9001, debug=True)
