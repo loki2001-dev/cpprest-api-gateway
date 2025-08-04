@@ -17,6 +17,21 @@
 
 ---
 
+## API Routing
+
+| API Endpoint      | Method | Target URL                              | Description                        |
+|-------------------|--------|-----------------------------------------|------------------------------------|
+| `/api/users`      | GET    | http://localhost:9001/users             | Retrieve list of all users         |
+| `/api/users`      | POST   | http://localhost:9001/users/create      | Create a new user                  |
+| `/api/users/{id}` | GET    | http://localhost:9001/users/{id}        | Retrieve specific user             |
+| `/api/users/{id}` | PUT    | http://localhost:9001/users/{id}/update | Update user information            |
+| `/api/users/{id}` | DELETE | http://localhost:9001/users/{id}/delete | Delete a user                      |
+| `/api/products`   | GET    | http://localhost:9002/products          | Retrieve list of all products      |
+| `/api/orders`     | POST   | http://localhost:9003/orders/create     | Create an order                    |
+| `/healthz`        | GET    | static response                         | Health check response (status: ok) |
+
+---
+
 ## Getting Started
 ### Prerequisites
 - Linux (Ubuntu 20.04 or later recommended)
