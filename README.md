@@ -22,8 +22,9 @@
 - Linux (Ubuntu 20.04 or later recommended)
 - Requires CMake 3.14 or later
 - Requires C++20 or later compiler
-- [cpprestsdk](https://github.com/microsoft/cpprestsdk)
-- [spdlog](https://github.com/gabime/spdlog)
+- [cpprestsdk](https://github.com/microsoft/cpprestsdk) (included as a submodule)
+- [spdlog](https://github.com/gabime/spdlog) (included as a submodule)
+- [Catch2](https://github.com/catchorg/Catch2) (included as a submodule)
 
 ---
 
@@ -33,8 +34,9 @@
 # Update package lists
 sudo apt update
 
-# Install dependencies (cpprestsdk, openssl, etc.)
-sudo apt install -y libcpprest-dev libssl-dev
+# Install dependencies
+sudo apt install -y libssl-dev
+sudo apt install -y python3-flask
 
 # Clone the repository
 git clone https://github.com/loki2001-dev/cpprest-api-gateway.git
