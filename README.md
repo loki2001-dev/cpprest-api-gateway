@@ -65,3 +65,16 @@ git submodule update --init --recursive
 
 # Build the project
 . build_project.sh
+
+```
+
+## Testing (TDD with Catch2)
+- This project follows Test-Driven Development (TDD) practices using Catch2, a modern C++ unit testing framework.
+
+### Test Structure
+- All test sources are located under the tests/ directory.
+- The test logic is completely separated from the main application build.
+
+- Build outputs are organized as follows:
+  - Main application: build/api_gateway
+  - Test application: build/tests/api_gateway_run_tests
