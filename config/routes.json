@@ -1,0 +1,48 @@
+{
+  "/api/users": {
+    "GET": {
+      "target": "http://localhost:9001/users",
+      "description": "Fetch list of all users"
+    },
+    "POST": {
+      "target": "http://localhost:9001/users/create",
+      "description": "Create a new user"
+    }
+  },
+  "/api/users/{id}": {
+    "GET": {
+      "target": "http://localhost:9001/users/{id}",
+      "description": "Fetch specific user by ID"
+    },
+    "PUT": {
+      "target": "http://localhost:9001/users/{id}/update",
+      "description": "Update user information"
+    },
+    "DELETE": {
+      "target": "http://localhost:9001/users/{id}/delete",
+      "description": "Delete a user by ID"
+    }
+  },
+  "/api/products": {
+    "GET": {
+      "target": "http://localhost:9002/products",
+      "description": "List all products"
+    }
+  },
+  "/api/orders": {
+    "POST": {
+      "target": "http://localhost:9003/orders/create",
+      "description": "Create a new order"
+    }
+  },
+  "/healthz": {
+    "GET": {
+      "target": "static_response",
+      "description": "Health check endpoint",
+      "response": {
+        "status": "ok",
+        "uptime": "auto"
+      }
+    }
+  }
+}
