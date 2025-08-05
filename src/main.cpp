@@ -1,11 +1,8 @@
 #include "gateway_server.h"
 #include "utils/logger.h"
-#include <iostream>
 #include <atomic>
 #include <array>
-#include <chrono>
 #include <csignal>
-#include <memory>
 #include <thread>
 #include <string>
 
@@ -30,6 +27,8 @@ void initialize() {
 }
 
 int main() {
+    initialize();
+
     try {
         GatewayServer server("http://0.0.0.0:8081", "../config/routes.json");
         server.open().wait();
